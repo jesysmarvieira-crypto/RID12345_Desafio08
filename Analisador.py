@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt 
 # Projeto: Analisador de Gastos em Python
 print("--- BEM VINDO AO ANALISADOR DE DADOS FINANCEIROS---")
 #Entrada de dados
@@ -18,3 +19,11 @@ elif saldo_final == 0:
    print("Cuuidado! Você gastou exatamente o que ganha.")
 else:
    print(f"Atenção! Você está no negativo: R${saldo_final:.2f}")
+   labels = ['aluguel', 'alimentacao', 'outros', 'Saldo livre']
+ #Usamos max(0, saldo_final) para o gráfico não dar erro se o saldo for negativo
+valores = [aluguel, alimentacão, outros, max(0, saldo_final)]
+plt.figure(figsize=(10, 6))
+plt.pie(valores, labels = labels,
+autopct =' %1.1f%%', startangle = 140)
+plt.title("Meu Resusmo Financeiro")
+plt.show()
