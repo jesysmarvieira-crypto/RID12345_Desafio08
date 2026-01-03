@@ -1,2 +1,3 @@
 # meu_primeiro_projeto
 Engenharia de Dados
+Aprendendo GitHub passo a passo...
