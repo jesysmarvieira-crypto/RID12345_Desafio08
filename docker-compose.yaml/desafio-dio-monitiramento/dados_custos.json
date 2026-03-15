@@ -1,0 +1,5 @@
+[
+    {"pipeline": "Ingestao_Vendas", "duracao_horas": 2, "diu_usada": 4},
+    {"pipeline": "Limpeza_Silver", "duracao_horas": 1.5, "diu_usada": 2},
+    {"pipeline": "Carga_Gold", "duracao_horas": 1, "diu_usada": 8}
+]
